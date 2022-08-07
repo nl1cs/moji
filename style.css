@@ -1,0 +1,489 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'UTM Avo','Roboto', sans-serif;
+  }
+  
+
+ /*project section */
+
+.projects{
+  position: relative;
+  background-color: #dfddf8;
+}
+
+.projects .container{
+  max-width: 1300px;
+  padding-top: 30px;
+}
+
+.projects .container .row h3{
+  color:#131274;
+
+}
+
+.graphic{
+  margin-top: -70px;
+  width:400px;
+  margin-left: 120px;
+
+}
+
+.sat {
+  max-width: 120px;
+  transform: rotate(-15deg);
+} 
+/*---------------------------------------
+    Waves section              
+-----------------------------------------*/
+
+#bubble{
+    min-height: 100vh;
+    position: relative;
+    background-image: url("images/globe.png"), linear-gradient(#0c0b4a, #0e0d59);
+    overflow:hidden;
+}
+
+.bubbles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.bubbles svg {
+  position: relative;
+  display: block;
+  width: calc(200%);
+  height: 640px;
+}
+
+.bubbles .shape-fill {
+  fill: #dfddf8;
+}
+ 
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 168px;
+}
+
+.waves .shape-fill {
+  fill: #dfddf8;
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.clouds svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 108px;
+  transform: rotateY(180deg);
+}
+
+.clouds .shape-fill {
+  fill: #FFFFFF;
+}
+
+#trainer,
+#blog,
+#price {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#home,
+#trainer,
+#newsletter,
+#price,
+#testimonial,
+#blog-header {
+  text-align: center;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+  nav{
+    padding-top: 30px !important;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  nav .logo img{
+    max-width: 110px;
+    padding: 10px;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #dfddf8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #fff;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+        
+      padding: 5px 40px 0 20px;
+      padding-top: 2px !important;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+        
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #1a1895;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+
+    nav .logo img{
+        top: -20px;
+        width: 80px;
+      }
+
+      .intro{
+        padding-top: 200px;
+        padding-left: 15%;
+      }
+
+      .bubbles{
+        display:none;
+      }
+
+      .waves{
+        display:none;
+      }
+
+      .clouds{
+        display:none;
+      }
+
+      .graphic{
+        display:none;
+      }
+
+      .sat{
+        max-width: 90px;
+        margin-top: 20px;
+      }
+
+      .col-6{
+        width:100%;
+      }
+      
+  }
+
+  .intro{
+    padding-top: 200px;
+    padding-left: 70px;
+  }
+ 
+  .intro h1{
+    font-weight: 550;
+    color: #dfddf8;
+  }
+
+  .intro h3{
+
+    color: #dfddf8;
+  }
+  
+ 
+  
+
+  
+  /* Footer */
+  footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #0c0b4a;
+    color: #dfddf8;
+    padding: 15px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .row-footer{
+    margin-top: 108px !important;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .col-footer{
+    flex-basis: 25%;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .col-footer:nth-child(2), .col-footer:nth-child(3){
+    flex-basis: 20%;
+  }
+  
+  .footer-logo{
+    max-width: 80px;
+    margin-bottom: 20px;
+  }
+  .col-footer h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: initial;
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #dfddf8;
+    margin: 20px 0;
+  }
+  footer ul li{
+    list-style: none;
+    margin-bottom: 8px;
+  
+  }
+  footer ul li a{
+    text-decoration: none;
+    color: #dfddf8 !important;
+  }
+  footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfddf8;
+    margin-bottom: 20px;
+  }
+  footer form .far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  footer form input{
+    width: 100%;
+    background: transparent;
+    color: #dfddf8;
+    border: 0;
+    outline: none;
+  }
+  footer form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  footer form button .fas{
+    font-size: 16px;
+    color: #dfddf8;
+  }
+  .social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #dfddf8;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #dfddf8;
+    margin: 20px auto;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+  .underline span{
+    width: 15px;
+    height: 100%;
+    background: #dfddf8;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+  
+  .main-content.single p{
+    font-size: 22px;
+    font-weight: 10;
+    line-height: 40px;
+    padding: 10px;
+  }
+  
+  @keyframes  moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+  }
+  
+  
+  @media (max-width: 700px){
+    .footer{
+      margin-top:7rem;
+      clear: both;
+      position: relative;
+     }
+    .col-footer{
+        flex-basis: 100%;
+        
+    }
+    .col-footer:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+    .col-footer:nth-child(2), .col-footer:nth-child(3){
+      flex-basis: 100%;
+    }
+    .footer-logo{
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .row-footer{
+     margin-top:0px !important;
+    }
+  }
+  
+  
+
+/*---------------------------------------
+    Testimonial section              
+-----------------------------------------*/
+#testimonial {
+  position: relative;
+  background: #fff;
+  color: #26253a;
+  padding-top: 8rem;
+}
+
+#testimonial .container {
+max-width: 900px;
+}
+
+
+#testimonial .fa {
+font-size: 42px;
+padding-bottom: 14px;
+}
+
+#testimonial h3 {
+letter-spacing: 1px;
+}
+
+#testimonial h4 {
+margin:0;
+padding:0;
+font-size: 25px;
+color: red;
+}
+
+#testimonial img {
+width: 100%;
+height: auto;
+}
+
