@@ -28,9 +28,13 @@
 
 .students .col-md-4 svg{
   position: absolute;
-    width: 148px;
-    margin-left: -230px;
+    width: 130px;
+    margin-left: -150px;
     margin-top: 99px;
+}
+
+.students .col-md-4{
+  padding-left:10%;
 }
 
 .second{
@@ -403,6 +407,9 @@
        padding: 10px;
       }
 
+      .students .col-md-4 {
+        padding-left: 0px !important;
+       }
       
       
   }
