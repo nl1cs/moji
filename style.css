@@ -26,11 +26,15 @@
     padding:20px;
 }
 
-.students .col-4 svg{
+.students .col-md-4 svg{
   position: absolute;
     width: 148px;
     margin-left: -230px;
     margin-top: 99px;
+}
+
+.second{
+  display:none;
 }
 
 .testimonial-quote blockquote {
@@ -382,6 +386,21 @@
       .students{
         padding-bottom:7rem;
       }
+
+      .students .container{
+        padding-top: 60px;
+      }
+
+      .students .container h1{
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+     
+      .testimonial-quote .quote-container{
+       padding: 10px;
+      }
+
+      
       
   }
 
@@ -401,6 +420,23 @@
   }
   
  
+ @media (max-width: 768px){
+  .first{
+    display:none;
+  }
+  .second{
+    display: block;
+    margin-left: 30%;
+  }
+
+  .testimonial-quote .quote-container p{
+    font-size: 20px;
+   }
+
+   .students .col-md-4 svg{
+    display:none;
+   }
+ }
   
 
   
