@@ -119,13 +119,16 @@
 }
 
 .projects .container{
-  max-width: 1300px;
   padding-top: 30px;
 }
 
 .projects .container .row h3{
   color:#131274;
 
+}
+
+.projects .container .row .description{
+  padding-left: 10%;
 }
 
 .graphic{
@@ -379,6 +382,7 @@
       }
 
       .col-6{
+        padding-left: 10px !important;
         width:100%;
         overflow: hidden;
       }
