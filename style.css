@@ -138,7 +138,7 @@
 .graphic{
   margin-top: -70px;
   width:400px;
-  margin-left: 200px;
+  margin-left: 120px;
 
 }
 
@@ -324,6 +324,11 @@
       display: block;
       transition: all 0.3s ease;
     }
+
+    .story nav ul{
+      background: black;
+    }
+
     #click:checked ~ ul{
       left: 0;
     }
@@ -385,7 +390,7 @@
         margin-right:0;
       }
 
-      .col-6{
+     .projects .col-6{
         padding-left: 10px !important;
         width:100%;
         overflow: hidden;
@@ -431,15 +436,15 @@
   }
   
  
- @media (max-width: 768px){
-  .first{
-    display:none;
-  }
+ @media (max-width: 76px){
+  
   .second{
     display: block;
     margin-left: 30%;
   }
-
+  .first{
+    display:none;
+  }
   .testimonial-quote .quote-container p{
     font-size: 20px;
    }
@@ -655,4 +660,80 @@ color: red;
 width: 100%;
 height: auto;
 }
+
+/*about us section */
+
+.story{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('images/bannernew.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.story hr{
+  background-color: white !important;
+}
+
+.story-start {
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+
+}
+
+.story-start p{
+  font-size: 20px;
+  margin-left: 15%;
+   max-width: 70%;
+}
+
+.timeline{
+  background-color: #ecebeb;
+  padding-top:100px;
+}
+
+.timeline-image-1{
+  width: 90%;
+  max-width: 550px;
+  margin-left:7% !important;
+  transform: rotate(-7deg);
+  --b: 10px; /* control the size */
+  padding: var(--b);
+  border: calc(2*var(--b)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--b));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#000 0);
+}
+
+.timeline .col-md-5 svg{
+  width: 100%;
+}
+
+.present{
+  padding-bottom: 120px;
+  padding-top: 120px;
+  background-color: #ecebeb;
+}
+
+.numbers{
+  padding-top:60px;
+}
+@media (max-width: 767px) {
+  .story-start{
+    padding-top: 90px;
+  }
+  .story-start p{
+    font-size: 15px;
+  }
+
+  .story-start h2{
+    margin-left:10%;
+    width: 80%;
+  }
+
+}
+
 
