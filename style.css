@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'UTM Avo','Roboto', sans-serif;
-    overflow:hidden;
+    
   }
   
 
@@ -629,6 +629,8 @@
   color: white;
   text-align: center;
   padding-top: 150px;
+  background-color: transparent;
+  pointer-events: none;
 
 }
 
@@ -697,6 +699,7 @@
 .gallery {
   background-color: #dfe8fe ;
   padding: 0 0 4rem 0;
+  overflow:hidden;
 }
 
 .img-container {
@@ -1084,6 +1087,13 @@ font-size: 1em;
 .events-row {
   margin-top: 100px;
 }
+
+@media (max-width: 767px){
+.header {
+  padding-top: 150px;
+}
+}
+
 @media (max-width: 1199px) {
 
   .events-info hr{
