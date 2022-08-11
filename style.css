@@ -699,7 +699,7 @@
 .gallery {
   background-color: #dfe8fe ;
   padding: 0 0 4rem 0;
-  overflow:hidden;
+  overflow:hidden !important;
 }
 
 .img-container {
@@ -786,14 +786,10 @@ width: 50%;
 
 }
 
-@supports (display: grid) {
-  .gallery .grid {
-    grid-gap: 1rem;
-  }
-}
 
 
 @media screen and (max-width: 1024px) {
+
   .gallery img:hover {
     transform: none;
   }
@@ -803,13 +799,13 @@ width: 50%;
     
   }
 
-  .gallery .img-container :hover .img-content-hover
+.img-content-hover
     {
-    display: none;
+    display: none !important;
   }
 
 
-  .gallery .img-content {
+.img-content {
     display: block;
     padding: 1rem 0;
   }
