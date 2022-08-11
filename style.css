@@ -176,6 +176,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  pointer-events: none;
 }
 
 .bubbles svg {
@@ -298,7 +299,7 @@
       position: fixed;
       top: 80px;
       left: -100%;
-      background: #1a1895;
+      background-color:#0c0b4a;
       height: 100vh;
       width: 100%;
       text-align: center;
@@ -816,33 +817,34 @@ width: 50%;
 #sat{
   min-height: 100vh;
   position: relative;
-  background-image: url('images/globe.png') ,linear-gradient(#0c0b4a, #0e0d59);
+  background-image: url('images/usa.png') ,linear-gradient(#0c0b4a, #0e0d59);
   background-repeat: no-repeat;
+  background-position: bottom;
   overflow:hidden;
-  color: #dfddf8
+  color: #dfddf8;
 }
 
-.sat-header{
+.header{
   padding-top: 200px;
   color: #dfddf8;
 }
 
-.sat-header h1{
+.header h1{
   font-weight: 550;
   color: #dfddf8;
   font-size: 60px;
 }
 
-.sat-header h5{
+.header h5{
   color: #dfddf8;
   font-size: 17px;
 }
-.sat-header h3{
+.header h3{
 
   color: #dfddf8;
 }
 
-.sat-header p{
+.header p{
   width:80%;
   max-width: 600px;
 }
@@ -858,7 +860,7 @@ max-width: 150px;
 }
 
 @media (max-width: 768px) {
-  .sat-header{
+  .header{
     margin-left: 5%;
   }
 
@@ -1040,4 +1042,64 @@ padding-top: 0px;
 .reviews .fas {
 font-size: 1em;
 }
+}
+
+
+/* events */
+
+.events{
+  min-height: 100vh;
+  position: relative;
+  background-image: url('images/city.png') ,linear-gradient(#0c0b4a, #0e0d59);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+  color: #dfddf8;
+}
+
+
+.events-info p {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+.events-info{
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background-color: #dfe8fe ;
+}
+
+.events-info img{
+  width: 90%;
+
+}
+
+.events-info p{
+  width: 90%;
+  padding-top: 10px;
+}
+
+.events-row {
+  margin-top: 100px;
+}
+@media (max-width: 1199px) {
+
+  .events-info hr{
+    margin-bottom: 10px !important;
+  }
+
+  .events-row{
+    margin-top: 50px;
+  }
+  .events-info .col-md-6{
+    padding-top: 80px;
+      }
+
+      .events-info{
+        width: 100%;
+        padding-left: 5%;
+      }
+
+      
 }
