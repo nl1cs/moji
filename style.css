@@ -1081,7 +1081,7 @@ font-size: 1em;
 }
 
 .events-row {
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 @media (max-width: 767px){
@@ -1097,15 +1097,19 @@ font-size: 1em;
   }
 
   .events-row{
-    margin-top: 50px;
+    margin-top: 0px;
   }
-  .events-info .col-md-6{
+  .events-info .events-icon{
     padding-top: 80px;
       }
 
       .events-info{
         width: 100%;
         padding-left: 5%;
+      }
+
+      .events-info h5{
+        margin-top: 25px;
       }
 
       
