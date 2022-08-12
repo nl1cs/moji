@@ -6,7 +6,9 @@
     
   }
   
-
+a {
+  text-decoration: none;
+}
   /*students section*/
 .students{
   position: relative;
@@ -360,8 +362,7 @@ position: fixed;
     }
 
     nav .logo img{
-        top: -20px;
-        width: 80px;
+        display: none;
       }
 
 .dropdown-content{
