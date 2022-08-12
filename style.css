@@ -246,6 +246,9 @@
     flex-wrap: wrap;
     padding-bottom: 20px;
   }
+
+
+
   nav .logo img{
     max-width: 110px;
     padding: 10px;
@@ -256,14 +259,13 @@
     list-style: none;
   }
   nav ul li{
-    margin: 0 5px;
+    padding: 0 25px;
   }
   nav ul li a{
     color: #dfddf8;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
-    padding: 8px 15px;
     border-radius: 5px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
@@ -281,11 +283,35 @@
   input[type="checkbox"]{
     display: none;
   }
+
+  .dropdown{
+    background: transparent;
+  }
+
+  
+  .dropdown-content {
+    margin-top: 7px;
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    text-align: left ;
+    margin-left: 0 !important;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .dropdown-content a{
+    font-size: 17px;
+  }
+  
+  .working{
+    display: block;
+  }
   @media (max-width:830px){
     nav{
-        
       padding: 5px 40px 0 20px;
       padding-top: 2px !important;
+      z-index: 100;
     }
   }
   @media (max-width: 830px) {
@@ -308,10 +334,6 @@
       transition: all 0.3s ease;
     }
 
-    .story nav ul{
-      background: black;
-    }
-
     #click:checked ~ ul{
       left: 0;
     }
@@ -332,13 +354,19 @@
     nav ul li a.active,
     nav ul li a:hover{
       background: none;
-      color: cyan;
+      color: white;
     }
 
     nav .logo img{
         top: -20px;
         width: 80px;
       }
+
+.dropdown-content{
+display: block;
+  position: relative !important;
+  text-align: center;
+}
 
       .intro{
         padding-top: 200px;
@@ -1113,4 +1141,28 @@ font-size: 1em;
       }
 
       
+}
+
+
+/*contact form */
+
+.contact {
+  margin-top: 120px;
+}
+.contact img{
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact h5{
+  margin-top: 10px;
+}
+
+.contact .fa, .fas, .fal, .fab {
+  margin-top: 15px;
 }
