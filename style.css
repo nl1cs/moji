@@ -164,7 +164,7 @@
 #bubble{
     min-height: 100vh;
     position: relative;
-    background-image: url("images/globe.png"), linear-gradient(#0c0b4a, #0e0d59);
+    background-image: url("images/globe.webp"), linear-gradient(#0c0b4a, #0e0d59);
     background-repeat: no-repeat;
     overflow:hidden;
 }
@@ -642,7 +642,7 @@ display: block;
 .story{
   min-height: 100vh;
   width: 100%;
-  background-image: url('images/bannernew.png');
+  background-image: url('images/bannernew.webp');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -845,7 +845,7 @@ width: 50%;
 #sat{
   min-height: 100vh;
   position: relative;
-  background-image: url('images/usa.png') ,linear-gradient(#0c0b4a, #0e0d59);
+  background-image: url('images/usa.webp') ,linear-gradient(#0c0b4a, #0e0d59);
   background-repeat: no-repeat;
   background-position: bottom;
   overflow:hidden;
@@ -1078,7 +1078,7 @@ font-size: 1em;
 .events{
   min-height: 100vh;
   position: relative;
-  background-image: url('images/city.png') ,linear-gradient(#0c0b4a, #0e0d59);
+  background-image: url('images/city.webp') ,linear-gradient(#0c0b4a, #0e0d59);
   background-repeat: no-repeat;
   background-size: cover;
   overflow:hidden;
