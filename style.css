@@ -1265,31 +1265,8 @@ max-height: 280px;
 }
 
 
-#myBtn {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 5%; /* Place the button at the bottom of the page */
-  right: 6%; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgb(4, 7, 56); /* Set a background color */
-  color: rgb(248, 248, 248); /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: rgb(13, 12, 96); /* Add a dark-grey background on hover */
-}
-
-
 
 @media only screen and (max-width: 770px) {
-#myBtn {
- display: none;
-}
 
 .contact{
   padding-bottom: 120px;
@@ -1297,3 +1274,63 @@ max-height: 280px;
 
 }
 
+.library{
+  min-height: 100vh;
+  position: relative;
+  background-image: url('images/globe.webp') ,linear-gradient(#0c0b4a, #0e0d59);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+  color: #dfddf8;
+}
+
+
+.library img{
+  width: 90%;
+max-width: 280px;
+max-height: 280px;
+}
+
+.library-info p{
+  width: 90%;
+  padding-top: 10px;
+}
+
+/*motions collection*/
+
+.motions-collection{
+  background-color: #dfe8fe;
+}
+
+.motion{
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+.motion iframe{
+  width: 100%;
+}
+
+/*youtue channel*/
+
+.youtube-channels {
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-color: #dfe8fe ;
+}
+
+.youtube-channels img{
+  max-width: 180px;
+  width: 90%;
+  border-radius: 50%;
+}
+
+.youtube-channels p{
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+.youtube-channels .row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
