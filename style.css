@@ -29,6 +29,43 @@ a {
     padding:20px;
 }
 
+
+
+.partial-border {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  border: none;
+  text-align: center;
+}
+
+
+
+.partial-border::before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+ }
+
+ .partial-border::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+ }
+
+ .partial-border::before,
+.partial-border::after {
+  position: absolute;
+  width: 33px;
+  height: 20px;
+  content: "";
+}
+
+
+
+
 .students .col-md-4 svg{
   position: absolute;
     width: 130px;
@@ -239,17 +276,23 @@ a {
   nav{
     padding-top: 30px !important;
     display: flex;
-    height: 80px;
+    height: 130px;
     width: 100%;
     background: transparent;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 50px;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
   }
 
 
+  nav p{
+    text-align: center;
+    margin-bottom: 7px;
+  }
 
   nav .logo img{
     max-width: 110px;
@@ -261,12 +304,12 @@ a {
     list-style: none;
   }
   nav ul li{
-    padding: 0 25px;
+    padding: 0 20px;
   }
   nav ul li a{
     color: #dfddf8;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -287,7 +330,7 @@ a {
   }
 
   .dropdown{
-    background: transparent;
+    background-color: transparent;
   }
 
   
@@ -299,7 +342,10 @@ a {
     text-align: left ;
     margin-left: 0 !important;
     z-index: 1;
-    position: absolute;
+    position: fixed;
+    max-width: 130px;
+    background: #0d0d4f;
+    
   }
 
   .dropdown-content a{
@@ -309,18 +355,56 @@ a {
   .working{
     display: block;
   }
-  @media (max-width:830px){
+
+  
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.scrolled-down .logo img{
+  max-width: 110px;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+  height: 70px;
+  background-color: #0c0b4d;
+  opacity: 0.9;
+  z-index: 1000000;
+}
+
+.scrolled-up ul li{
+  margin-top: -10px;
+}
+
+.scrolled-up .logo img{
+  display: none;
+}
+
+  @media (max-width: 930px) {
+    nav img{
+      display: none;
+    }
+  }
+
+  @media (max-width: 810px){
     nav{
       padding: 5px 40px 0 20px;
       padding-top: 2px !important;
       z-index: 100;
       background-color: #0c0b4d;
-position: fixed;
+      position: fixed;
     }
+
+    
   }
-  @media (max-width: 830px) {
+
+
+
+  @media (max-width: 810px) {
     nav .menu-btn i{
       display: block;
+      margin-top: -30px;
     }
     #click:checked ~ .menu-btn i:before{
       content: "\f00d";
@@ -328,7 +412,7 @@ position: fixed;
     nav ul{
         
       position: fixed;
-      top: 80px;
+      top: 65px;
       left: -100%;
       background-color:#0c0b4a;
       height: 100vh;
@@ -344,6 +428,7 @@ position: fixed;
     nav ul li{
       width: 100%;
       margin: 40px 0;
+      margin-left: -20px;
     }
     nav ul li a{
       width: 100%;
@@ -366,7 +451,6 @@ position: fixed;
       }
 
 .dropdown-content{
-display: block;
   position: relative !important;
   text-align: center;
 }
@@ -430,6 +514,9 @@ display: block;
         padding-left: 0px !important;
        }
       
+      .scrolled-up .menu-btn i{
+        margin-top: 0;
+      }
       
   }
 
@@ -1103,7 +1190,8 @@ font-size: 1em;
 
 .events-info img{
   width: 90%;
-
+max-width: 280px;
+max-height: 280px;
 }
 
 .events-info p{
@@ -1111,9 +1199,12 @@ font-size: 1em;
   padding-top: 10px;
 }
 
+
+
 .events-row {
   margin-top: 110px;
 }
+
 
 @media (max-width: 767px){
 .header {
@@ -1128,11 +1219,9 @@ font-size: 1em;
   }
 
   .events-row{
-    margin-top: 0px;
+    margin-top: 80px;
   }
-  .events-info .events-icon{
-    padding-top: 80px;
-      }
+
 
       .events-info{
         width: 100%;
@@ -1140,7 +1229,7 @@ font-size: 1em;
       }
 
       .events-info h5{
-        margin-top: 25px;
+        padding-top: 25px;
       }
 
       
@@ -1197,4 +1286,9 @@ font-size: 1em;
  display: none;
 }
 
+.contact{
+  padding-bottom: 120px;
 }
+
+}
+

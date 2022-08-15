@@ -2,6 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta property="og:title" content="Trang chủ - Moji" />
+<meta property="og:type" content="Tổng quan về Moji" />
+<meta property="og:url" content="moji.education/index.html" />
+<meta property="og:image" content="https://drive.google.com/uc?export=view&id=17itA8iAV-ntpZBVWsvlZp3hEYf8svhnc" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <!-- Main css -->
@@ -11,9 +15,9 @@
 <link rel="icon" type="image/x-icon" href="images/logo.ico">
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-up"></button>
-    <section id="bubble">
-      <nav>
+  
+    <section id="bubble" class="navPad">
+     <nav class="autohide navigation">
         <div class="logo"> <a href="index.html"><img src="images/logo.webp"></a></div>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
@@ -23,12 +27,19 @@
           <li><a href="index.html">Trang chủ</a></li>
           <li><a href="about.html">Về Moji</a></li>
           <li>
-            <a href="#" class="dropdown">Khóa học<i class="fa fa-caret-down"></i></a>
+            <a href="#" onClick="myFunction(this)" id="dropdown" class="dropdown">Khóa học <i class="fa fa-caret-down"></i></a>
             <div class="dropdown-content">
               <a href="sat.html">Moji SAT</a>
-              <p  style="padding-top:7px"><a href="events.html">Moji Programs</a></p>
+             
           </div>
         </li>
+        <li>
+          <a href="#" onClick="myFunction(this)" id="dropdown" class="dropdown">Tranh biện <i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <p><a href="library.html">Thư viện</a></p>
+            <p  ><a href="events.html">Chương trình</a></p>
+        </div>
+      </li>
           <li><a href="contact.html">Liên hệ</a></li>
         </ul>
       </nav>
@@ -119,8 +130,7 @@ từ các bạn học sinh trên cả nước và đã giúp đỡ cho <b>40+</b
           </defs>
           <image class="cls-1" width="200" height="201" xlink:href="data:img/webp;base64,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"/>
         </svg>
-        <h1>TRẢI NGHIỆM CỦA HỌC VIÊN MOJI</h1>
-        <button class="btn btn-primary first" style="background-color: #36009d; border: #36009d;margin-top: 30px;">Đọc thêm tại đây</button>
+        <h1 class="partial-border">TRẢI NGHIỆM CỦA HỌC VIÊN MOJI</h1>
       </div>
       
       <div class="col-md-8">
@@ -164,7 +174,6 @@ từ các bạn học sinh trên cả nước và đã giúp đỡ cho <b>40+</b
   </div>
   </div>
 </div>
-<button class="btn btn-primary second" style="background-color: #36009d; border: #36009d;margin-top: 30px;">Đọc thêm tại đây</button>
 </div> 
 
 

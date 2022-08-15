@@ -1,8 +1,20 @@
-const dropdownBtn = document.querySelector('.dropdown');
-const dropdown = document.querySelector('.dropdown-content');
-dropdownBtn.onclick = function(){
-  dropdown.classList.toggle("working");
+
+
+function myFunction(a) {
+  
+  a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("working");
+
 }
+const link = document.querySelectorAll(".dropdown")
+
+link.forEach((e) => e.addEventListener("click", event => {
+  event.preventDefault()
+
+  // do something and navigate
+}))
+
+
+
 
 window.onclick = function(event) {
   if (!event.target.matches('.dropdown')) {
@@ -17,19 +29,47 @@ window.onclick = function(event) {
   }
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+document.addEventListener("DOMContentLoaded", function(){
+
+  el_autohide = document.querySelector('.autohide');
+  navBar = document.querySelector('.navPad');
+  // add padding-top to bady (if necessary)
+  navbar_height = document.querySelector('.navigation').offsetHeight;
+  navBar.style.paddingTop = navbar_height + 'px';
+
+  if(el_autohide){
+    var last_scroll_top = 0;
+    window.addEventListener('scroll', function() {
+          let scroll_top = window.scrollY;
+           if (scroll_top == 0) {
+            console.log(scroll_top)
+            el_autohide.classList.remove('scrolled-up');
+          }
+         else if(scroll_top < last_scroll_top) {
+              el_autohide.classList.remove('scrolled-down');
+              el_autohide.classList.add('scrolled-up');
+          }
+         
+          else {
+              el_autohide.classList.remove('scrolled-up');
+              el_autohide.classList.add('scrolled-down');
+          }
+          last_scroll_top = scroll_top;
+    }); 
+    // window.addEventListener
   }
-}
+  // if
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+
+  
+}); 
+
+
+
+
+
+ 
+
+ 
+ 
