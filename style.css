@@ -1334,3 +1334,32 @@ max-height: 280px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.btnGroup{
+  width: 50%;
+  flex-direction: column;
+align-items: flex-start;
+  padding:10px;
+}
+
+.btnGroup a {
+  padding:10px;
+  margin: 10px;
+}
+
+.workshops {
+  background-color: #dfe8fe;
+  padding-bottom: 120px;
+}
+
+.workshops .row{
+  padding-top: 60px;
+}
+
+.workshops a{
+  color: rgb(5, 0, 79);
+}
+
+.workshops h3{
+  padding-top: 40px;
+}
