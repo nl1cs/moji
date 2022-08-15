@@ -452,7 +452,10 @@ a {
 
 .dropdown-content{
   position: relative !important;
-  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  background-color: transparent;
+  
 }
 
       .intro{
