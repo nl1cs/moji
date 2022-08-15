@@ -29,6 +29,13 @@ window.onclick = function(event) {
   }
 }
 
+window.addEventListener('scroll', event => {
+  const scroll = window.scrollY;
+  if (scroll !=0) {
+     document.querySelector('.working').classList.remove('working');
+  }
+ 
+})
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -52,8 +59,11 @@ document.addEventListener("DOMContentLoaded", function(){
           }
          
           else {
+          
               el_autohide.classList.remove('scrolled-up');
               el_autohide.classList.add('scrolled-down');
+              
+              
           }
           last_scroll_top = scroll_top;
     }); 
