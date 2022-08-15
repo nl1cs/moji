@@ -196,6 +196,22 @@ a {
   float:right;
 } 
 
+.intro{
+  padding-top: 150px;
+  padding-left: 70px;
+}
+
+.intro h1{
+  font-weight: 550;
+  color: #dfddf8;
+}
+
+.intro h3{
+
+  color: #dfddf8;
+}
+
+
 /*---------------------------------------
     Waves section              
 -----------------------------------------*/
@@ -459,7 +475,7 @@ a {
 }
 
       .intro{
-        padding-top: 200px;
+        padding-top: 120px;
         padding-left: 15%;
       }
 
@@ -524,21 +540,7 @@ a {
   }
 
 
-  .intro{
-    padding-top: 200px;
-    padding-left: 70px;
-  }
  
-  .intro h1{
-    font-weight: 550;
-    color: #dfddf8;
-  }
-
-  .intro h3{
-
-    color: #dfddf8;
-  }
-  
  
  @media (max-width: 767px){
   
@@ -946,7 +948,7 @@ width: 50%;
 }
 
 .header{
-  padding-top: 200px;
+  padding-top: 150px;
   color: #dfddf8;
 }
 
