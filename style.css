@@ -1311,6 +1311,19 @@ max-height: 280px;
   width: 100%;
 }
 
+.vdc{
+  background-color: #dfe8fe;
+}
+
+.calendar{
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+.calendar iframe{
+  width: 100%;
+}
+
 /*youtue channel*/
 
 .youtube-channels {
