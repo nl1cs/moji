@@ -1,4 +1,4 @@
-
+var viewportHeight = window.innerHeight;
 
 function myFunction(a) {
   
@@ -31,11 +31,24 @@ window.onclick = function(event) {
 
 window.addEventListener('scroll', event => {
   const scroll = window.scrollY;
+  console.log(scroll)
   if (scroll !=0) {
      document.querySelector('.working').classList.remove('working');
   }
  
 })
+
+window.addEventListener('scroll', event => {
+  const scroll = window.scrollY;
+  console.log(scroll)
+ if (scroll > viewportHeight){
+  document.querySelector('.sidebar').classList.add('show');
+ }
+ else {
+  document.querySelector('.show').classList.remove('show');
+ }
+})
+
 
 document.addEventListener("DOMContentLoaded", function(){
 

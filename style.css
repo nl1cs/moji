@@ -288,7 +288,23 @@ a {
   fill: #dfe8fe;
 }
 
+.sidebar{
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+ top: 140; /* Stay at the top */
+  right: 0;
+  display: none;
+}
 
+.show{
+  display: block;
+}
+
+@media (max-width: 768px){
+.sidebar{
+  display: none !important;
+}
+}
   nav{
     padding-top: 30px !important;
     display: flex;
@@ -1376,3 +1392,4 @@ align-items: flex-start;
 .workshops h3{
   padding-top: 40px;
 }
+
