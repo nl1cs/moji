@@ -753,7 +753,7 @@ a {
 .story{
   min-height: 100vh;
   width: 100%;
-  background-image: url('images/bannernew.webp');
+  background-image: url('images/bannernew.webp') ,linear-gradient(#0c0b4a, #0e0d59);
   background-position: center;
   background-size: cover;
   position: relative;
